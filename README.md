@@ -8,32 +8,33 @@ Solution
 Do clustering on serverside using elasticsearch.
 
 Query to do clustering in elasticsearch.
-{
-  query: {
-    constant_score: {
-      filter: {
-        geo_bounding_box: {
-          location: bound
-        }
-      }
-    }
-  },
-  aggs: {
-    zoom: {
-      geohash_grid: {
-        field: "location",
-        precision: zoom
-      },
-      aggs: {
-        centroid: {
-          geo_centroid: { field: "location" }
-        },
-        cell: {
-          geo_bounds: {
-            field: "location"
+
+        {
+          query: {
+            constant_score: {
+              filter: {
+                geo_bounding_box: {
+                  location: bound
+                }
+              }
+            }
+          },
+          aggs: {
+            zoom: {
+              geohash_grid: {
+                field: "location",
+                precision: zoom
+              },
+              aggs: {
+                centroid: {
+                  geo_centroid: { field: "location" }
+                },
+                cell: {
+                  geo_bounds: {
+                    field: "location"
+                  }
+                }
+              }
+            }
           }
         }
-      }
-    }
-  }
-}

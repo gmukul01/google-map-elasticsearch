@@ -1,0 +1,26 @@
+[
+  {
+    "textColor": "white",
+    "url": "https://raw.githubusercontent.com/googlemaps/v3-utility-library/master/markerclusterer/images/m2.png",
+    "vertical-align": "middle",
+    "text-align": "center",
+    "height": 50,
+    "width": 50
+  },
+  {
+    "textColor": "white",
+    "url": "https://raw.githubusercontent.com/googlemaps/v3-utility-library/master/markerclusterer/images/m2.png",
+    "height": 50,
+    "vertical-align": "middle",
+    "text-align": "center",
+    "width": 50
+  },
+  {
+    "textColor": "white",
+    "url": "https://raw.githubusercontent.com/googlemaps/v3-utility-library/master/markerclusterer/images/m2.png",
+    "vertical-align": "middle",
+    "text-align": "center",
+    "height": 50,
+    "width": 50
+  }
+]
